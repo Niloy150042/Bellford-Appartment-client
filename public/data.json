@@ -1,0 +1,77 @@
+[
+{
+  "image":"https://i.ibb.co/r4NsnxQ/aboutsection-pic.jpg",
+  "floor":"7th",
+  "Blockname":"B",
+  "Apartmentno":345,
+  "Rent":220,
+  "status":"Pending"
+},
+
+{
+  "image":"https://i.ibb.co/PmgLWcQ/banner3.jpg",
+  "floor":"6th",
+  "Blockname":"S",
+  "Apartmentno":473,
+  "Rent":212,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/9tNtBtm/images.jpg",
+  "floor":"9th",
+  "Blockname":"E",
+  "Apartmentno":478,
+  "Rent":912,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/9tNtBtm/images.jpg",
+  "floor":"10th",
+  "Blockname":"E",
+  "Apartmentno":468,
+  "Rent":112,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/g3v6sp0/images-1.jpg",
+  "floor":"11th",
+  "Blockname":"D",
+  "Apartmentno":460,
+  "Rent":112,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/K5LPTQL/LUXURY-APARTMENT-01.jpg",
+  "floor":"22th",
+  "Blockname":"F",
+  "Apartmentno":410,
+  "Rent":212,
+  "status":"Pending"
+},
+
+{
+  "image":"https://i.ibb.co/1GpB9Rr/banner-2.jpg",
+  "floor":"10th",
+  "Blockname":"S",
+  "Apartmentno":401,
+  "Rent":292,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/PmgLWcQ/banner3.jpg",
+  "floor":"11th",
+  "Blockname":"S",
+  "Apartmentno":431,
+  "Rent":295,
+  "status":"Pending"
+},
+{
+  "image":"https://i.ibb.co/g3v6sp0/images-1.jpg",
+  "floor":"9th",
+  "Blockname":"S",
+  "Apartmentno":411,
+  "Rent":205,
+  "status":"Pending"
+}
+
+]

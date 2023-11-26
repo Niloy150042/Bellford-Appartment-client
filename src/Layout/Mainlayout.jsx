@@ -1,16 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
 
 const Mainlayout = () => {
+    const location =useLocation()
+  
     return (
         <div>
-            <Navbar></Navbar>
+           {
+           
+                location.pathname == '/rooms' ? '':<Navbar></Navbar>
+            
+           }
            <div>
            <Outlet></Outlet>
            </div>
-           <Footer></Footer>
+           {
+            location.pathname == '/rooms' ? '':<Footer></Footer> 
+           }
             
         </div>
     );

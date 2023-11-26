@@ -5,6 +5,7 @@ import { FaServicestack } from "react-icons/fa6";
 import { MdStreetview } from "react-icons/md";
 import pic from '../assets/Pictures/about section pic/images.jpg'
 import { Link } from "react-router-dom";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 
 const About = () => {
@@ -21,7 +22,8 @@ const About = () => {
 
            <p className="flex justify-center"><img src={pic} className="h-[300px] rounded-3xl py-3 " alt="" /></p>
 
-           <Link className="flex justify-center py-4" > <p className="btn  text-white  btn-warning " > See more details of building </p> </Link>
+           <Link className="flex justify-center py-4" > <p className="btn  text-white  btn-warning " > See more details of building <FaArrowAltCircleRight/> </p> </Link>
+           <Sectiontitle heading={'Our Features'} subheading={'--Explore our wonderful features--'}></Sectiontitle>
 
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[1000px] mx-auto gap-4" >
              <div className="border border-orange-400 border-solid p-10 rounded-xl text-center" >

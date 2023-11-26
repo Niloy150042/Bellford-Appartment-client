@@ -8,7 +8,7 @@ const Navbar = () => {
 
   <div className="lg:flex gap-5 text-white" >
   <Link><p className=" text-xl font-Roboto hover:border-b-2  hover:border-b-orange-400" ><a>Home</a></p></Link>
-    <Link><p className=" text-xl font-Roboto  hover:border-b-2  hover:border-b-orange-400" ><a>Appartment</a></p></Link>
+    <Link to='/rooms' ><p className=" text-xl font-Roboto  hover:border-b-2  hover:border-b-orange-400" ><a>Appartment</a></p></Link>
     <Link><p className=" text-xl font-Roboto hover:border-b-2  hover:border-b-orange-400" ><a>Sign-up</a></p></Link>
   </div>
   
