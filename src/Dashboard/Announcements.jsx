@@ -22,7 +22,9 @@ const Announcements = () => {
     return (
         <div className="flex justify-center gap-3" >
            <div>
-           <Sectiontitle heading={'*Announcement*'} subheading={'Annoncement by owner ---> '} ></Sectiontitle>
+           {/* <Sectiontitle heading={'*Announcement*'} subheading={'Annoncement by owner ---> '} >
+
+           </Sectiontitle> */}
                 {
                     announcement?.map(info=> <div className="bg-slate-200 lg:w-[700px] rounded-md p-8 text-center" key={info._id}>
                            
