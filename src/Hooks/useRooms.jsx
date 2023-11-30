@@ -13,8 +13,10 @@ const {data:rooms =[]} =useQuery({
         return res.data 
     }
     
+    
 })
 return [rooms];
+
 
 };
 
