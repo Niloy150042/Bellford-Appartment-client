@@ -80,3 +80,29 @@
 }
 
 ]
+
+
+[
+
+  { 
+    "image": "https://i.ibb.co/vQbLxx7/download-1.jpg",
+    "cupponcode": "FRIDAY200",
+    "Discount_percentage" : 20,
+    "cuppon_description" : "By using this FRIDAY200 you will get 20% in Luxury super delux room"
+  },
+  {
+    "image":"https://i.ibb.co/w72GvSm/images-3.jpg",
+    "cupponcode": "BELLFORD234",
+    "Discount_percentage" : 10,
+    "cuppon_description" : "By using this BELLFORD234 you will get 10% in Luxury super delux room"
+  },
+  {
+    "image":"https://i.ibb.co/m66WHjn/images-4.jpg",
+    "cupponcode": "LOPPINS300",
+    "Discount_percentage" : 15,
+    "cuppon_description" : "By using this LOPPINS300 you will get 15% in Luxury super delux room"
+  },
+
+
+   
+]

@@ -76,7 +76,7 @@ const Dashboard = () => {
 
               <Link to={"/dashboard/cuppons"}>
                 <button className="btn w-full  btn-warning  mb-4">
-                  Manage-cupponst <CiDiscount1 />
+                  Manage-cuppons <CiDiscount1 />
                 </button>
               </Link>
 
