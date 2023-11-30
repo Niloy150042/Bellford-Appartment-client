@@ -1,8 +1,15 @@
-# React + Vite
+# My Live site link : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# my sites name is BELLFORD apprtment booking website
 
-Currently, two official plugins are available:
+* It  has a wonderful facilites like user can book a room anytime 
+* It is responsive for mobile tablet and desktop and for many devices
+* It has a wonderful announcement section 
+* User cant enrole with breaking the announcement which was given by owner
+* It has  3 roles like user , member , admin ... 
+* admin can easily accept the booking of user and manage the members
+* no unauthorized access can enter in this website
+* BELLFORD appartment location is Gulshan 2, bellford avenue 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# so give checkin hurry  
