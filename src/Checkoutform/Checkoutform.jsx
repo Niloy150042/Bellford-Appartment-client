@@ -32,7 +32,7 @@ const Checkoutform = () => {
     console.log(typeof member.Rent);
 
     axios
-      .post("http://localhost:5000/create_payment_intent", {
+      .post("https://bellfrod-server-side.vercel.app/create_payment_intent", {
         price: parseInt(member.Rent),
       })
       .then((res) => {

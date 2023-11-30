@@ -19,10 +19,12 @@ const Dashboard = () => {
 
   useEffect(() => {
     setloading(true);
-    axios.get(`http://localhost:5000/user?email=${user.email}`).then((data) => {
-      setUserData(data.data);
-      setloading(false);
-    });
+    axios
+      .get(`https://bellfrod-server-side.vercel.app/user?email=${user.email}`)
+      .then((data) => {
+        setUserData(data.data);
+        setloading(false);
+      });
   }, [user.email]);
   // console.log(userData);
 
