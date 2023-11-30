@@ -2,7 +2,7 @@
 
 const Sectiontitle = ({subheading,heading}) => {
     return (
-        <div className="flex justify-center  mt-16 mb-6" >
+        <div className="flex justify-center  mt-8 mb-6" >
 
             <div className="text-center"  >
                 <p className="text-3xl font-poppins text-orange-400 py-3" >{heading}</p>

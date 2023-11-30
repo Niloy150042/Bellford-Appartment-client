@@ -1,15 +1,37 @@
 import { Link } from "react-router-dom";
 import logo from '../assets/Pictures/logo.jpg'
+import { useContext } from "react";
+import { Authcontext } from "../FIrebase/Authprovider";
+import Swal from "sweetalert2";
 
 
 
 const Navbar = () => {
+  // const user =true
+  const {user ,logout}=useContext(Authcontext)
+
+ const handleclick =()=>{
+  logout()
+  .then(result=>{
+    Swal.fire({
+      title: "Good job!",
+      text: "Log-out successful!",
+      icon: "success"
+    });
+    console.log(result);
+  })
+  .catch(error=>{
+    console.log(error);
+
+  })
+ }
+  
     const navitems =<>
 
   <div className="lg:flex gap-5 text-white" >
   <Link><p className=" text-xl font-Roboto hover:border-b-2  hover:border-b-orange-400" ><a>Home</a></p></Link>
     <Link to='/rooms' ><p className=" text-xl font-Roboto  hover:border-b-2  hover:border-b-orange-400" ><a>Appartment</a></p></Link>
-    <Link><p className=" text-xl font-Roboto hover:border-b-2  hover:border-b-orange-400" ><a>Sign-up</a></p></Link>
+    <Link to={'/signup'} ><p className=" text-xl font-Roboto hover:border-b-2  hover:border-b-orange-400" ><a>Sign-up</a></p></Link>
   </div>
   
     </>
@@ -24,7 +46,7 @@ const Navbar = () => {
              {navitems}
             </ul>
           </div>
-         <div className="flex gap-3 items-center" >
+         <div className="flex gap-3 items-center">
             <img src={logo} className="h-[80px] w-[80px] rounded-full " alt="" />
 
         <Link> <a className="font-cinzel  text-white font-bold text-3xl  hover:underline ">BellFord</a></Link>
@@ -37,10 +59,19 @@ const Navbar = () => {
           </ul>
          
           
-          
+          {/* <img className="h-[50px] rounded-full" src={useravatar} */}
         </div>
         <div className="navbar-end" >
-          <a className="btn btn-outline border border-solid border-orange-500 text-white">Log-in</a>
+         {
+               user? <Link><div className="dropdown ">
+               <div tabIndex={0}  className="mr-24 lg:mr-17"><img className="h-[50px] rounded-full" src={user.photoURL}/></div>
+               <ul className="dropdown-content z-[10] menu shadow -ml-24 lg:-ml-2 bg-orange-200 rounded-box">
+                 <li className="font-bold font-Roboto uppercase" ><a> {user.displayName} </a></li>
+                 <Link to={'/dashboard'} ><li className="font-bold font-Roboto btn btn-warning " ><a>Dashboard</a></li></Link>
+                 <button onClick={handleclick} className="btn btn-warning mt-3">Log-out</button>
+               </ul>
+             </div></Link> : <Link to={'/login'} > <a className="btn btn-outline border border-solid border-orange-500 text-white">Log-in</a></Link>
+         }
         </div>
       </div>
     );

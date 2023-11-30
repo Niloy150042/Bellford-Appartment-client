@@ -4,20 +4,23 @@ import Footer from "../Footer/Footer";
 
 
 const Mainlayout = () => {
-    const location =useLocation()
+    const location =useLocation() 
+    const isrooms = location.pathname.includes('rooms') 
+    const issignup =location.pathname.includes('signup')
+    const islogin =location.pathname.includes('login')
   
     return (
         <div>
            {
            
-                location.pathname == '/rooms' ? '':<Navbar></Navbar>
+              isrooms || issignup||islogin||  <Navbar></Navbar>
             
            }
            <div>
            <Outlet></Outlet>
            </div>
            {
-            location.pathname == '/rooms' ? '':<Footer></Footer> 
+        isrooms || issignup || islogin|| <Footer></Footer>
            }
             
         </div>
