@@ -9,7 +9,7 @@
 * It has  3 roles like user , member , admin ... 
 * admin can easily accept the booking of user and manage the members
 * no unauthorized access can enter in this website
-* BELLFORD appartment location is Gulshan 2, bellford avenue 
+* BELLFORD appartment location is Gulshan 2, bellford avenu
 
 
 # so give checkin hurry  
